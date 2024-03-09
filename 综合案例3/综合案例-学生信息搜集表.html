@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表格大框架 -->
+    <table border="1" width="500" height="300">
+        <!-- 表格标题 默认在表格整体顶部居中位置显示 -->
+        <caption>优秀学生信息表格</caption>
+        <!-- 表格每行  -->
+        <tr>
+            <!-- 表示一列小标题 通常用于表格第一行 -->
+            <th>年纪</th>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>班级</th>
+        </tr>
+        <tr>
+            <!-- 表格单元格 用于表格内容 非第一行 -->
+            <!-- rowspan用于竖向合并 合并几个格子参数就写几 -->
+            <td rowspan="2">高三</td>
+            <td>张三</td>
+            <td>110</td>
+            <td>三年二班</td>
+        </tr>
+        <tr>
+            <!-- 表格单元格 用于表格内容 非第一行 -->
+            <td>赵四</td>
+            <td>120</td>
+            <td>三年三班</td>
+        </tr>
+        <tr>
+            <!-- 表格单元格 用于表格内容 非第一行 -->
+            <td>评语</td>
+            <!-- colspan 用于水平合并 -->
+            <td colspan="3">你们都很优秀</td>
+        </tr>
+    </table>
+</body>
+</html>

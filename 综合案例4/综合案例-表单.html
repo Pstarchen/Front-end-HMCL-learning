@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <!-- 表单域标签，用来实现功能 -->
+    <form action="">
+        <!-- placeholder 用于提示词 出现在输入框中 -->
+        昵称：<input type="text" placeholder="请输入昵称"><br><br>
+        性别：
+        <!-- name 用来分组，将两个单选框分成同类，只能选择其中一个 -->
+        <!-- checked 用来默认选中为男 -->
+        <!-- label标签 用来使文字和标签功能相同 绑定内容和表单 -->
+        <label><input type="radio" name="sex" checked>男</label>
+        <label><input type="radio" name="sex">女</label>
+        <br><br>
+        所在城市：
+        <!-- select 下拉菜单 -->
+        <select>
+            <!-- option 下拉菜单的每一项内容 -->
+            <option>北京</option>
+            <!-- selected 默认选中为上海 -->
+            <option selected>上海</option>
+            <option>广州</option>
+        </select>
+        <br><br>
+        婚姻状况：
+        <label><input type="radio" name="婚恋情况" checked>未婚</label>
+        <label><input type="radio" name="婚恋情况">已婚</label>
+        <label><input type="radio" name="婚恋情况">保密</label>
+        <br><br>
+        喜欢的类型：
+        <!-- checkbox 多选框 -->
+        <label><input type="checkbox">可爱</label>
+        <label><input type="checkbox">性感</label>
+        <label><input type="checkbox">御姐</label>
+        <label><input type="checkbox">萝莉</label>
+        <label><input type="checkbox">小鲜肉</label>
+        <label><input type="checkbox">大叔</label>
+        <br><br>
+        个人介绍：
+        <br><br>
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <br><br>
+        <h3>我承诺</h3>
+        <ul>
+            <li>年满18岁、单身</li>
+            <li>抱着严谨的态度</li>
+            <li>真诚寻找另一半</li>
+            <br><br>
+            <label><input type="checkbox">我同意所有条款</label>
+        </ul>
+        <!-- 按钮 input button -->
+        <!-- 两种按钮方法 value 用于设置input标签的按钮内容 -->
+        <input type="submit" value="免费注册">
+        <button type="reset">重置</button>
+    </form>
+</body>
+</html>
